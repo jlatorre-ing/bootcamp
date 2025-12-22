@@ -1,0 +1,22 @@
+# 1. Solicitar datos
+edad = int(input("Ingresa tu edad: ")).strip
+rol = input("Rol (estudiante, docente, visitante): ").lower()
+
+# 2. Clasificación de edad
+if edad < 13:
+    categoria = "Infancia"
+elif edad <= 17:
+    categoria = "Adolescencia"
+elif edad <= 64:
+    categoria = "Adultez"
+else:
+    categoria = "Persona mayor"
+
+# 3. Evaluar acceso a beneficio (Ejemplo: Estudiantes y Docentes adultos)
+acceso = True if (rol in ["estudiante", "docente"] and edad >= 18) else False
+
+# 4. Resumen final usando f-strings
+estado_acceso = "concedido" if acceso else "denegado"
+print(f"--- Resumen ---")
+print(f"Categoría: {categoria} | Rol: {rol}")
+print(f"Resultado: El acceso al beneficio ha sido {estado_acceso}.")
