@@ -1,0 +1,14 @@
+# 1. Solicitar datos al usuario
+nombre = input("Ingresa tu nombre: ")
+edad = int(input("Ingresa tu edad: "))
+rol = input("Ingresa tu rol (estudiante/docente/otro): ").lower()
+
+# 2. Evaluar condiciones usando if, elif, else
+if edad < 18:
+    print(f"Lo siento {nombre}, el acceso está denegado para menores de 18 años.")
+elif rol not in ["estudiante", "docente", "otro"]:
+    print("Rol no válido. Por favor, revisa la escritura.")
+elif edad >= 18 and (rol == "estudiante" or rol == "docente"):
+    print(f"¡Bienvenido {nombre}! Tienes acceso a la actividad especial por ser {rol}.")
+else:
+    print(f"Hola {nombre}, tu rol de '{rol}' no tiene permisos para esta actividad.")
