@@ -13,7 +13,7 @@ promedio = (nota1 + nota2 + nota3) / 3
 edad_meses = edad * 12
 
 # 3) Comparación lógica (condición)
-aprueba = promedio >= 6
+aprueba = promedio >= 4
 
 # 4) Mensaje personalizado (incluye conversión extra con str() si quieres)
 estado = "APROBADO ✅" if aprueba else "REPROBADO ❌"
