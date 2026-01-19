@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos de datos
+contactos.json
+contactos_test.json
+
+# VS Code
+.vscode/
+
+# Entorno virtual
+venv/
+env/
