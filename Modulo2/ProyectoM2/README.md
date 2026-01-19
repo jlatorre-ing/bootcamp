@@ -29,8 +29,8 @@ Aplicación de consola que permite gestionar contactos personales con las siguie
 
 1. **Clonar el repositorio:**
 ```bash
-git clone https://github.com/tu-usuario/sistema-gestion-contactos.git
-cd sistema-gestion-contactos
+git clone https://github.com/jlatorre-ing/bootcamp/tree/main/Modulo2/ProyectoM2
+cd ProyectoM2
 ```
 
 2. **Ejecutar la aplicación:**
@@ -64,8 +64,7 @@ Al ejecutar el programa, verás el menú principal:
 sistema-gestion-contactos/
 │
 ├── contactos.py              # Código principal (clases y lógica)
-├── test_contactos.py         # Suite completa de pruebas unitarias
-├── contactos.json            # Base de datos (generado automáticamente)
+├── contactos.json            # Base de datos 
 ├── README.md                 # Este archivo
 ├── DOCUMENTACION.md          # Documentación técnica detallada
 └── .gitignore               # Archivos ignorados por Git
@@ -100,31 +99,6 @@ contactos: List[Contacto]
 - Formato: JSON con codificación UTF-8
 - Guardado: Automático tras cada operación
 - Carga: Automática al iniciar la aplicación
-
-## 🧪 Pruebas
-
-### Ejecutar Pruebas Unitarias
-
-```bash
-# Todas las pruebas
-python test_contactos.py
-
-# Con detalles
-python test_contactos.py -v
-
-# Prueba específica
-python -m unittest test_contactos.TestContacto.test_crear_contacto_valido
-```
-
-### Cobertura de Pruebas
-
-- **32 pruebas unitarias** cubriendo:
-  - Creación y validación de contactos
-  - Operaciones CRUD completas
-  - Búsquedas y listados
-  - Persistencia de datos
-  - Manejo de errores
-  - Flujos de integración
 
 ## 💻 Ejemplos de Uso
 
@@ -222,12 +196,7 @@ Este proyecto implementa los siguientes conceptos de programación:
    - Lectura/escritura JSON
    - Persistencia de datos
 
-4. **Testing**
-   - Pruebas unitarias
-   - Pruebas de integración
-   - Aserciones y validaciones
-
-5. **Validación de Datos**
+4. **Validación de Datos**
    - Expresiones regulares
    - Validación de entrada
    - Manejo de errores
@@ -262,9 +231,9 @@ Si encuentras un bug, por favor abre un issue en GitHub con:
 
 ## 👨‍💻 Autor
 
-**[Tu Nombre]**
-- GitHub: [@tu-usuario](https://github.com/tu-usuario)
-- Email: tu.email@example.com
+**Jose Tomas Latorre**
+- GitHub: [@jlatorre-ing](https://github.com/jlatorre-ing)
+- Email: j.contreraslatorre@gmail.com
 
 ## 📄 Licencia
 
