@@ -114,7 +114,7 @@ data = {
 df = pd.DataFrame(data)
 
 #Creación de DataFrames desde Archivos
-df_csv = pd.read_csv('archivo.csv')
+df_csv = pd.read_csv('Titanic-Dataset.csv')
 print(df_csv.head())
 
 
@@ -247,6 +247,9 @@ BASE_DIR = Path(__file__).resolve().parent
 csv_path = BASE_DIR / "Titanic-Dataset.csv"
 
 df = pd.read_csv(csv_path)
+
+# Convertir Fare a numérico
+df["Fare"] = pd.to_numeric(df["Fare"], errors='coerce')
 
 # MIN y MAX (ej: Age y Fare)
 edad_min = df["Age"].min()

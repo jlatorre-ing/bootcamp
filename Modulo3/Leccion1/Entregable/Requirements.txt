@@ -1,0 +1,15 @@
+# Requerimientos para el Análisis de Caso: NumPy en Análisis Financiero
+# Instalación: pip install -r requirements.txt
+
+# Librería principal para análisis numérico
+numpy>=1.24.0,<2.0.0
+
+# Librerías opcionales para análisis extendido (no requeridas para el caso básico)
+# Descomentar si se desea ampliar el análisis:
+# matplotlib>=3.7.0        # Para visualización de datos
+# pandas>=2.0.0            # Para manipulación avanzada de datos
+# scipy>=1.10.0            # Para análisis estadístico avanzado
+
+# Herramientas de desarrollo (opcionales)
+# pytest>=7.3.0            # Para testing
+# jupyter>=1.0.0           # Para notebooks interactivos
