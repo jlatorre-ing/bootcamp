@@ -75,8 +75,11 @@ cd proyecto_uf_2025
 
 Coloca los siguientes archivos en la carpeta `proyecto_uf_2025`:
 - `analisis_uf_2025.ipynb` (el notebook principal)
+- `analisis_uf_script.py` (script Python)
 - `requirements.txt` (las dependencias)
 - `UF_2025.csv` (los datos de entrada)
+
+**Nota importante:** El script ahora usa **rutas absolutas**, por lo que detecta automáticamente la ubicación de los archivos. Puedes ejecutarlo desde cualquier directorio.
 
 ### PASO 3: Crear Entorno Virtual (Recomendado)
 
@@ -538,7 +541,9 @@ pip install lxml html5lib
 **DataFrame**: Tabla de datos de pandas (como Excel en Python)  
 **Series**: Una columna de un DataFrame  
 **NaN**: Not a Number - valor nulo o faltante  
-**Index**: Índice numérico de las filas (0, 1, 2, ...)
+**Index**: Índice numérico de las filas (0, 1, 2, ...)  
+**Path absoluto**: Ruta completa desde la raíz del sistema  
+**Path relativo**: Ruta desde el directorio actual
 
 ### Conceptos Estadísticos
 
@@ -547,7 +552,8 @@ pip install lxml html5lib
 **Moda**: Valor que más se repite  
 **Desviación Estándar**: Mide qué tan dispersos están los datos  
 **Cuartil**: Divide los datos en 4 partes iguales  
-**Outlier**: Valor atípico que se aleja mucho del resto
+**Outlier**: Valor atípico que se aleja mucho del resto  
+**IQR (Rango Intercuartílico)**: Q3 - Q1, rango del 50% central de datos
 
 ### Operaciones de Pandas
 
@@ -628,8 +634,15 @@ Has completado un proyecto completo de análisis de datos. Ahora tienes las habi
 
 ---
 
-**Versión:** 1.0  
-**Última actualización:** Febrero 2025  
-**Autor:** Analista de Datos  
+## 🎯 Cambios en v1.1
 
-Para soporte o consultas, revisa la sección de Solución de Problemas o consulta la documentación oficial.
+✅ **Rutas absolutas implementadas**: El script detecta su ubicación automáticamente  
+✅ **Validación web inteligente**: Respaldo automático a CSV  
+✅ **Compatible con espacios en rutas**: OneDrive, Google Drive, etc.  
+✅ **Mejor manejo de tipos**: Conversión robusta de datos chilenos  
+
+---
+
+**Versión:** 1.1  
+**Última actualización:** Febrero 2026  
+**Estado:** ✅ Productivo

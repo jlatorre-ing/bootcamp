@@ -248,9 +248,6 @@ csv_path = BASE_DIR / "Titanic-Dataset.csv"
 
 df = pd.read_csv(csv_path)
 
-# Convertir Fare a numérico
-df["Fare"] = pd.to_numeric(df["Fare"], errors='coerce')
-
 # MIN y MAX (ej: Age y Fare)
 edad_min = df["Age"].min()
 edad_max = df["Age"].max()

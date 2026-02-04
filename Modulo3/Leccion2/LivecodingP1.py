@@ -74,7 +74,7 @@ print(df_csv.loc[0:2, ["Survived", "Sex", "Age"]])
 
 # .loc -> condición + columnas (muy típico)
 # Pasajeros con Fare > 50
-print(df_csv.loc[pd.to_numeric(df_csv["Fare"], errors='coerce') > 50, ["Pclass", "Sex", "Age", "Fare"]].head())
+print(df_csv.loc[df_csv["Fare"] > 50, ["Pclass", "Sex", "Age", "Fare"]].head())
 
 
 

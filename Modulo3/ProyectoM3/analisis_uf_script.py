@@ -15,6 +15,7 @@ import pandas as pd
 import numpy as np
 import warnings
 from datetime import datetime
+import os
 
 # Configuración
 warnings.filterwarnings('ignore')
@@ -24,10 +25,11 @@ pd.set_option('display.float_format', '{:.2f}'.format)
 
 # Constantes
 URL_SII = 'https://www.sii.cl/valores_y_fechas/uf/uf2025.htm'
-ARCHIVO_ENTRADA = 'UF_2025.csv'
-ARCHIVO_SALIDA_LIMPIO = 'UF_2025_LIMPIO.csv'
-ARCHIVO_SALIDA_STATS = 'UF_2025_ESTADISTICAS.csv'
-ARCHIVO_REPORTE = 'REPORTE_UF_2025.txt'
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+ARCHIVO_ENTRADA = os.path.join(SCRIPT_DIR, 'UF_2025.csv')
+ARCHIVO_SALIDA_LIMPIO = os.path.join(SCRIPT_DIR, 'UF_2025_LIMPIO.csv')
+ARCHIVO_SALIDA_STATS = os.path.join(SCRIPT_DIR, 'UF_2025_ESTADISTICAS.csv')
+ARCHIVO_REPORTE = os.path.join(SCRIPT_DIR, 'REPORTE_UF_2025.txt')
 MESES = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 
          'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic']
 
@@ -118,8 +120,11 @@ def ensuciar_datos(df):
     
     # 5. Formatos inconsistentes
     print("5️⃣ Introduciendo formatos inconsistentes...")
-    df.loc[5, 'Día'] = '6.'
-    df.loc[10, 'Día'] = 'Día 11'
+    # Convertir columna Día a object para permitir strings
+    if 'Día' in df.columns:
+        df['Día'] = df['Día'].astype(object)
+        df.loc[5, 'Día'] = '6.'
+        df.loc[10, 'Día'] = 'Día 11'
     
     # 6. Columna irrelevante
     print("6️⃣ Agregando columna irrelevante...")
@@ -378,11 +383,21 @@ def main():
     # 1. Extracción de datos
     df_web = extraer_datos_web()
     
-    if df_web is None:
+    # Verificar si los datos web tienen la estructura esperada
+    df = None
+    if df_web is not None:
+        # Verificar si tiene las columnas esperadas
+        meses_encontrados = [mes for mes in MESES if mes in df_web.columns]
+        if len(meses_encontrados) >= 10:  # Al menos 10 meses
+            df = df_web
+            print("✅ Estructura de datos web validada correctamente")
+        else:
+            print(f"⚠️ Los datos web no tienen la estructura esperada (solo se encontraron {len(meses_encontrados)} meses)")
+            print("   Usando archivo CSV local como alternativa...")
+            df = cargar_datos_csv(ARCHIVO_ENTRADA)
+    else:
         print("⚠️ Usando archivo CSV local como alternativa...")
         df = cargar_datos_csv(ARCHIVO_ENTRADA)
-    else:
-        df = df_web
     
     # 2. Mostrar datos originales
     print("\n👁️ Muestra de datos originales:")

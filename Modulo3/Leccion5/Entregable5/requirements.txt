@@ -1,0 +1,12 @@
+# Requisitos para el Análisis de Data Wrangling
+# Python 3.8 o superior
+
+# Bibliotecas principales
+pandas>=1.5.0
+numpy>=1.23.0
+openpyxl>=3.0.0
+scikit-learn>=1.1.0
+
+# Opcional para visualización (si deseas agregar gráficos)
+matplotlib>=3.5.0
+seaborn>=0.12.0
