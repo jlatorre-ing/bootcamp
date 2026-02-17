@@ -1,0 +1,151 @@
+name,slug,igdb_rating,genres,platforms,developers,release_year
+Resonite,resonite,100.0,"[""Indie""]",,,Resonite
+Grand Theft Auto V: Story Mode,grand-theft-auto-v-story-mode,99.7,"[""Shooter"", ""Arcade""]","[{""name"": ""Xbox Series X|S""}, {""name"": ""PlayStation 5""}]","[{""name"": ""Rockstar Games""}]",Grand
+Bubsy 3D: Bubsy Visits the James Turrell Retrospective,bubsy-3d-bubsy-visits-the-james-turrell-retrospective,99.7,"[""Platform""]",,,Bubsy
+Flimbo's Quest,flimbos-quest,99.7,"[""Platform""]",,,Flimbo's
+Metal Gear Solid: The Legacy Collection,metal-gear-solid-the-legacy-collection,99.6,"[""Shooter"", ""Tactical"", ""Adventure""]","[{""name"": ""PlayStation 3""}]","[{""name"": ""Kojima Productions""}]",Metal
+Metal Gear Solid: The Legacy Collection,metal-gear-solid-the-legacy-collection-2,99.6,"[""Shooter"", ""Tactical"", ""Adventure""]",,,Metal
+Wizardry: Bane of the Cosmic Forge,wizardry-bane-of-the-cosmic-forge,99.5,"[{""name"": ""Role-playing (RPG)""}, {""name"": ""Adventure""}]","[{""name"": ""Satellaview""}, {""name"": ""Linux""}, {""name"": ""PC (Microsoft Windows)""}, {""name"": ""Mac""}, {""name"": ""DOS""}, {""name"": ""FM Towns""}, {""name"": ""Amiga""}, {""name"": ""Super Famicom""}]","[{""name"": ""Sir-tech Software""}, {""name"": ""Game Studio""}]",Wizardry
+Deluxe Ski Jump 2,deluxe-ski-jump-2,99.5,"[""Sport"", ""Indie"", ""Arcade""]",,,Deluxe
+Outer Wilds: Archaeologist Edition,outer-wilds-archaeologist-edition,99.5,"[""Puzzle"", ""Simulator"", ""Adventure"", ""Indie""]","[{""name"": ""Xbox Series X|S""}, {""name"": ""PlayStation 4""}, {""name"": ""PC (Microsoft Windows)""}, {""name"": ""PlayStation 5""}, {""name"": ""Xbox One""}, {""name"": ""Nintendo Switch""}]","[{""name"": ""Mobius Digital""}]",Outer
+MLB Power Pros 2008,mlb-power-pros-2008-2,99.4,"[""Simulator"", ""Sport""]",,,MLB
+Lizards Must Die,lizards-must-die,99.4,"[{""name"": ""Hack and slash/Beat 'em up""}, {""name"": ""Indie""}]","[{""name"": ""PC (Microsoft Windows)""}]","[{""name"": ""The Bratans""}]",Lizards
+MLB Power Pros 2008,mlb-power-pros-2008,99.4,"[{""name"": ""Simulator""}, {""name"": ""Sport""}]","[{""name"": ""Wii""}, {""name"": ""Nintendo DS""}, {""name"": ""PlayStation 2""}]","[{""name"": ""Konami""}]",MLB
+Lizards Must Die,lizards-must-die-2,99.4,"[""Hack and slash/Beat 'em up"", ""Indie""]",,,Lizards
+Golden Axe Warrior,golden-axe-warrior,99.4,"[{""name"": ""Role-playing (RPG)""}]","[{""name"": ""Sega Master System/Mark III""}]","[{""name"": ""Sega Enterprises, Ltd.""}]",Golden
+Golden Axe Warrior,golden-axe-warrior-2,99.4,"[""Role-playing (RPG)""]",,,Golden
+Batman: Arkham Collection,batman-arkham-collection,99.4,"[{""name"": ""Hack and slash/Beat 'em up""}, {""name"": ""Adventure""}]","[{""name"": ""PlayStation 4""}, {""name"": ""PC (Microsoft Windows)""}, {""name"": ""Xbox One""}]","[{""name"": ""Rocksteady Studios""}]",Batman
+Fuga: Melodies of Steel 2,fuga-melodies-of-steel-2-2,99.3,"[""Role-playing (RPG)"", ""Simulator"", ""Strategy"", ""Turn-based strategy (TBS)"", ""Tactical""]",,,Fuga
+Grand Theft Auto V: Special Edition,grand-theft-auto-v-special-edition,99.3,"[{""name"": ""Shooter""}, {""name"": ""Racing""}, {""name"": ""Sport""}]","[{""name"": ""PlayStation 3""}, {""name"": ""Xbox 360""}]","[{""name"": ""Rockstar Games""}]",Grand
+Scaler,scaler,99.2,"[""Platform""]","[{""name"": ""Xbox""}, {""name"": ""Nintendo GameCube""}, {""name"": ""PlayStation 2""}]","[{""name"": ""A2M""}]",Scaler
+Undertale Yellow,undertale-yellow,99.2,"[""Role-playing (RPG)"", ""Turn-based strategy (TBS)"", ""Adventure"", ""Indie""]","[{""name"": ""PC (Microsoft Windows)""}]","[{""name"": ""Team Undertale Yellow""}]",Undertale
+Undertale Yellow,undertale-yellow-2,99.2,"[""Role-playing (RPG)"", ""Turn-based strategy (TBS)"", ""Adventure"", ""Indie""]",,,Undertale
+Scaler,scaler-2,99.2,"[""Platform""]",,,Scaler
+Hrot,hrot,99.1,"[""Shooter"", ""Indie""]","[{""name"": ""PC (Microsoft Windows)""}]","[{""name"": ""Spytihněv""}]",Hrot
+Hrot,hrot-2,99.1,"[""Shooter"", ""Indie""]",,,Hrot
+Angband,angband,99.1,"[""Role-playing (RPG)"", ""Hack and slash/Beat 'em up""]",,,Angband
+Anstoss 3,anstoss-3,99.0,"[{""name"": ""Simulator""}, {""name"": ""Sport""}]","[{""name"": ""PC (Microsoft Windows)""}]","[{""name"": ""Ascaron Entertainment""}]",Anstoss
+Anstoss 3,anstoss-3-2,99.0,"[""Simulator"", ""Sport""]",,,Anstoss
+San Andreas Multiplayer,san-andreas-multiplayer,98.8,"[""Shooter"", ""Racing""]","[{""name"": ""PC (Microsoft Windows)""}]",[],San
+San Andreas Multiplayer,san-andreas-multiplayer-2,98.8,"[""Shooter"", ""Racing""]",,,San
+Adastra,adastra,98.7,"[{""name"": ""Visual Novel""}]","[{""name"": ""Linux""}, {""name"": ""Android""}, {""name"": ""PC (Microsoft Windows)""}, {""name"": ""Mac""}]","[{""name"": ""Echo Project""}]",Adastra
+Ghosts of Tabor,ghosts-of-tabor,98.6,"[""Shooter"", ""Tactical""]","[""PC""]",,Ghosts
+Kingdom Hearts II Final Mix+,kingdom-hearts-ii-final-mix-plus,98.6,"[""Role-playing (RPG)"", ""Adventure""]","[{""name"": ""PlayStation 2""}]","[{""name"": ""Square Enix Product Development Division 1""}]",Kingdom
+Goblin Sword,goblin-sword,98.5,"[{""name"": ""Platform""}, {""name"": ""Role-playing (RPG)""}, {""name"": ""Adventure""}]","[{""name"": ""iOS""}, {""name"": ""Nintendo Switch""}]","[{""name"": ""Gelato Games""}]",Goblin
+Goblin Sword,goblin-sword-2,98.5,"[""Platform"", ""Role-playing (RPG)"", ""Adventure""]",,,Goblin
+Castlevania Advance Collection,castlevania-advance-collection-2,98.4,"[""Platform"", ""Role-playing (RPG)"", ""Adventure""]",,,Castlevania
+Gwent: Crimson Curse,gwent-crimson-curse,98.4,"[{""name"": ""Strategy""}, {""name"": ""Card & Board Game""}]","[{""name"": ""PlayStation 4""}, {""name"": ""PC (Microsoft Windows)""}, {""name"": ""Xbox One""}]","[{""name"": ""CD Projekt RED""}]",Gwent
+Castlevania Advance Collection,castlevania-advance-collection,98.4,"[""Platform"", ""Role-playing (RPG)"", ""Adventure""]","[{""name"": ""PlayStation 4""}, {""name"": ""PC (Microsoft Windows)""}, {""name"": ""Xbox One""}, {""name"": ""Nintendo Switch""}]","[{""name"": ""Konami""}]",Castlevania
+The Elder Scrolls V: Skyrim - Anniversary Edition,the-elder-scrolls-v-skyrim-anniversary-edition,98.3,"[{""name"": ""Role-playing (RPG)""}, {""name"": ""Adventure""}]","[{""name"": ""Xbox Series X|S""}, {""name"": ""PlayStation 4""}, {""name"": ""Nintendo Switch 2""}, {""name"": ""PC (Microsoft Windows)""}, {""name"": ""PlayStation 5""}, {""name"": ""Xbox One""}, {""name"": ""Nintendo Switch""}]","[{""name"": ""Bethesda Game Studios""}]",
+ENA: Dream BBQ,ena-dream-bbq-2,98.3,"[""Adventure"", ""Indie""]",,,ENA
+Ena: Dream BBQ,ena-dream-bbq,98.3,"[""Adventure"", ""Indie""]","[{""name"": ""Linux""}, {""name"": ""PC (Microsoft Windows)""}, {""name"": ""Mac""}]","[{""name"": ""Joel G""}]",Ena
+Master Lemon: The Quest for Iceland,master-lemon-the-quest-for-iceland,98.2,"[""Adventure""]","[{""name"": ""Xbox Series X|S""}, {""name"": ""PlayStation 4""}, {""name"": ""PC (Microsoft Windows)""}, {""name"": ""PlayStation 5""}, {""name"": ""Mac""}, {""name"": ""Xbox One""}, {""name"": ""Nintendo Switch""}]","[{""name"": ""Pepita Digital""}]",Master
+Hiveswap: Act 1,hiveswap-act-1,98.2,"[""Point-and-click"", ""Puzzle"", ""Role-playing (RPG)"", ""Adventure"", ""Indie""]","[{""name"": ""Linux""}, {""name"": ""PC (Microsoft Windows)""}, {""name"": ""Mac""}]","[{""name"": ""What Pumpkin Games""}]",Hiveswap
+Hiveswap: Act 1,hiveswap-act-1-2,98.2,"[""Point-and-click"", ""Puzzle"", ""Role-playing (RPG)"", ""Adventure"", ""Indie""]",,,Hiveswap
+SOCOM: US Navy SEALs,socom-us-navy-seals--1,98.1,"[""Shooter"", ""Simulator"", ""Strategy"", ""Tactical""]","[{""name"": ""PlayStation 2""}]","[{""name"": ""Zipper Interactive""}]",SOCOM
+SOCOM U.S. Navy SEALs,socom-us-navy-seals,98.1,"[""Shooter"", ""Simulator"", ""Strategy"", ""Tactical""]",,,SOCOM
+Batman: Arkham Knight - Premium Edition,batman-arkham-knight-premium-edition,98.0,"[""Hack and slash/Beat 'em up"", ""Adventure""]","[{""name"": ""PlayStation 4""}, {""name"": ""PC (Microsoft Windows)""}, {""name"": ""Xbox One""}]","[{""name"": ""Rocksteady Studios""}]",Batman
+The Witcher 3: Wild Hunt - Game of the Year Edition,the-witcher-3-wild-hunt-game-of-the-year-edition,98.0,"[{""name"": ""Role-playing (RPG)""}, {""name"": ""Adventure""}]","[{""name"": ""PlayStation 4""}, {""name"": ""PC (Microsoft Windows)""}, {""name"": ""Xbox One""}]","[{""name"": ""CD Projekt RED""}]",
+Epiko Regal,epiko-regal--1,97.8,"[{""name"": ""Real Time Strategy (RTS)""}, {""name"": ""Strategy""}, {""name"": ""Tactical""}, {""name"": ""Card & Board Game""}]","[{""name"": ""Android""}, {""name"": ""iOS""}]","[{""name"": ""Wharf Street Studios""}]",Epiko
+Umineko no Naku Koro ni Chiru,umineko-no-naku-koro-ni-chiru-2,97.7,"[""Adventure"", ""Visual Novel""]",,,Umineko
+Umineko no Naku Koro ni Chiru,umineko-no-naku-koro-ni-chiru,97.7,"[""Adventure"", ""Visual Novel""]","[{""name"": ""PC (Microsoft Windows)""}]","[{""name"": ""07th Expansion""}]",Umineko
+Streets of Rage Remake,streets-of-rage-remake-2,97.6,"[""Hack and slash/Beat 'em up"", ""Indie""]",,,Streets
+Streets of Rage Remake,streets-of-rage-remake,97.6,"[""Hack and slash/Beat 'em up"", ""Indie""]","[{""name"": ""PC (Microsoft Windows)""}]","[{""name"": ""Bombergames""}]",Streets
+Battlefield 3: Premium Edition,battlefield-3-premium-edition,97.5,"[{""name"": ""Shooter""}]","[{""name"": ""PlayStation 3""}, {""name"": ""PC (Microsoft Windows)""}, {""name"": ""Xbox 360""}]","[{""name"": ""EA Digital Illusions CE""}]",Battlefield
+Metal Gear Solid: Snake Eater 3D,metal-gear-solid-snake-eater-3d,97.4,"[{""name"": ""Shooter""}, {""name"": ""Tactical""}, {""name"": ""Adventure""}]","[{""name"": ""Nintendo 3DS""}]","[{""name"": ""Kojima Productions""}]",Metal
+Voices of the Void,voices-of-the-void,97.3,"[""Simulator"", ""Indie""]",,,Voices
+Bloodborne: Game of the Year Edition,bloodborne-game-of-the-year-edition,97.1,"[""Role-playing (RPG)""]","[{""name"": ""PlayStation 4""}]","[{""name"": ""FromSoftware""}]",Bloodborne
+Catan Universe,catan-universe,97.1,"[{""name"": ""Strategy""}, {""name"": ""Quiz/Trivia""}, {""name"": ""Card & Board Game""}]","[{""name"": ""PC (Microsoft Windows)""}, {""name"": ""iOS""}, {""name"": ""Mac""}, {""name"": ""Nintendo Switch""}]","[{""name"": ""Exozet""}]",Catan
+Europa Universalis V,europa-universalis-v,96.8,"[""Strategy""]",,,Europa
+The Witcher 3: Wild Hunt - Complete Edition,the-witcher-3-wild-hunt-complete-edition--1,96.7,"[{""name"": ""Role-playing (RPG)""}, {""name"": ""Adventure""}]","[{""name"": ""Xbox Series X|S""}, {""name"": ""PlayStation 4""}, {""name"": ""PC (Microsoft Windows)""}, {""name"": ""PlayStation 5""}, {""name"": ""Xbox One""}, {""name"": ""Nintendo Switch""}]","[{""name"": ""CD Projekt RED""}]",
+Persona Q2: New Cinema Labyrinth,persona-q2-new-cinema-labyrinth,96.6,"[""Role-playing (RPG)"", ""Strategy"", ""Adventure""]","[{""name"": ""Nintendo 3DS""}]","[{""name"": ""P Studio""}, {""name"": ""Atlus""}]",Persona
+Persona Q2: New Cinema Labyrinth,persona-q2-new-cinema-labyrinth-2,96.6,"[""Role-playing (RPG)"", ""Strategy"", ""Adventure""]",,,Persona
+Captain Tsubasa Vol. II: Super Striker,captain-tsubasa-vol-ii-super-striker,96.6,"[""Real Time Strategy (RTS)"", ""Role-playing (RPG)"", ""Sport"", ""Strategy"", ""Tactical""]",,,Captain
+Animal Company,animal-company,96.6,"[{""name"": ""Adventure""}]","[{""name"": ""Meta Quest 2""}, {""name"": ""SteamVR""}]",[],Animal
+Geotastic,geotastic-2,96.4,"[""Quiz/Trivia""]",,,Geotastic
+Geotastic,geotastic,96.4,"[""Quiz/Trivia""]","[{""name"": ""Web browser""}]","[{""name"": ""Eduard But""}]",Geotastic
+The Witcher 3: Wild Hunt – Blood and Wine,the-witcher-3-wild-hunt-blood-and-wine-2,96.4,"[""Role-playing (RPG)"", ""Adventure""]",,,
+The Witcher 3: Wild Hunt - Blood and Wine,the-witcher-3-wild-hunt-blood-and-wine,96.4,"[{""name"": ""Role-playing (RPG)""}, {""name"": ""Adventure""}]","[{""name"": ""Xbox Series X|S""}, {""name"": ""PlayStation 4""}, {""name"": ""PC (Microsoft Windows)""}, {""name"": ""PlayStation 5""}, {""name"": ""Xbox One""}, {""name"": ""Nintendo Switch""}]","[{""name"": ""CD Projekt RED""}]",
+Beast Battle Simulator,beast-battle-simulator,96.4,"[""Role-playing (RPG)"", ""Simulator"", ""Sport"", ""Strategy"", ""Indie""]","[{""name"": ""PC (Microsoft Windows)""}, {""name"": ""iOS""}]","[{""name"": ""DOG HOGGLER""}]",Beast
+Mahjong Soul,mahjong-soul,96.4,"[""Strategy"", ""Card & Board Game""]",,,Mahjong
+Yu-Gi-Oh! ARC-V Tag Force Special,yu-gi-oh-arc-v-tag-force-special,96.3,"[""Strategy"", ""Card & Board Game""]","[{""name"": ""PlayStation Portable""}]",[],Yu-Gi-Oh
+Dragon Ball: Sparking! Zero,dragon-ball-sparking-zero,96.1,"[""Fighting""]","[{""name"": ""Xbox Series X|S""}, {""name"": ""Nintendo Switch 2""}, {""name"": ""PC (Microsoft Windows)""}, {""name"": ""PlayStation 5""}, {""name"": ""Nintendo Switch""}]","[{""name"": ""Spike Chunsoft""}]",Dragon
+Dragon Ball: Sparking! Zero,dragon-ball-sparking-zero-2,96.1,"[""Fighting""]",,,Dragon
+Star Control II,star-control-ii,96.0,"[""Simulator"", ""Strategy"", ""Adventure"", ""Indie""]","[{""name"": ""Linux""}, {""name"": ""PC (Microsoft Windows)""}, {""name"": ""3DO Interactive Multiplayer""}, {""name"": ""Mac""}, {""name"": ""DOS""}]","[{""name"": ""Toys for Bob""}]",Star
+Star Control II,star-control-ii-2,96.0,"[""Simulator"", ""Strategy"", ""Adventure"", ""Indie""]",,,Star
+Victoria: Revolutions,victoria-revolutions,96.0,"[""Strategy""]",,,Victoria
+Baldur's Gate III,baldurs-gate-iii,96.0,"[{""name"": ""Role-playing (RPG)""}, {""name"": ""Strategy""}, {""name"": ""Turn-based strategy (TBS)""}]","[{""name"": ""Google Stadia""}, {""name"": ""Xbox Series X|S""}, {""name"": ""PC (Microsoft Windows)""}, {""name"": ""PlayStation 5""}, {""name"": ""Mac""}]","[{""name"": ""Larian Studios""}]",Baldur's
+Super Mario All-Stars + Super Mario World,super-mario-all-stars-plus-super-mario-world,96.0,"[{""name"": ""Platform""}]","[{""name"": ""Super Nintendo Entertainment System""}]","[{""name"": ""Nintendo EAD""}]",Super
+Ultima Online,ultima-online,95.8,"[""Role-playing (RPG)""]","[{""name"": ""PC (Microsoft Windows)""}]","[{""name"": ""Origin Systems""}]",Ultima
+Ultima Online,ultima-online-2,95.8,"[""Role-playing (RPG)""]",,,Ultima
+Burnhouse Lane,burnhouse-lane,95.7,"[""Point-and-click"", ""Puzzle"", ""Adventure"", ""Indie""]","[{""name"": ""Xbox Series X|S""}, {""name"": ""PlayStation 4""}, {""name"": ""PC (Microsoft Windows)""}, {""name"": ""PlayStation 5""}, {""name"": ""Xbox One""}, {""name"": ""Nintendo Switch""}]","[{""name"": ""Harvester Games""}]",Burnhouse
+Polity,polity,95.7,"[{""name"": ""Point-and-click""}, {""name"": ""Puzzle""}, {""name"": ""Role-playing (RPG)""}, {""name"": ""Simulator""}, {""name"": ""Indie""}]","[{""name"": ""Android""}, {""name"": ""PC (Microsoft Windows)""}, {""name"": ""iOS""}, {""name"": ""Mac""}]","[{""name"": ""Jib Games""}]",Polity
+Heroes of Might and Magic III: Horn of the Abyss,heroes-of-might-and-magic-iii-horn-of-the-abyss,95.7,"[{""name"": ""Role-playing (RPG)""}, {""name"": ""Strategy""}, {""name"": ""Turn-based strategy (TBS)""}, {""name"": ""Tactical""}, {""name"": ""Indie""}]","[{""name"": ""PC (Microsoft Windows)""}]","[{""name"": ""HotA Crew""}]",Heroes
+My Racing Career,my-racing-career--1,95.7,"[""Racing"", ""Simulator"", ""Strategy""]","[{""name"": ""Web browser""}, {""name"": ""Android""}]","[{""name"": ""F&L Creative""}]",My
+My Racing Career,my-racing-career,95.7,"[""Racing"", ""Simulator"", ""Strategy""]",,,My
+Burnhouse Lane,burnhouse-lane-2,95.7,"[""Point-and-click"", ""Puzzle"", ""Adventure"", ""Indie""]",,,Burnhouse
+Sonic Mania Plus,sonic-mania-plus-2,95.6,"[""Platform""]",,,Sonic
+Population: One,population-one-2,95.6,"[""Shooter"", ""Arcade""]",,,Population
+Sonic Mania Plus,sonic-mania-plus,95.6,"[{""name"": ""Platform""}]","[{""name"": ""PlayStation 4""}, {""name"": ""Android""}, {""name"": ""PC (Microsoft Windows)""}, {""name"": ""iOS""}, {""name"": ""Xbox One""}, {""name"": ""Nintendo Switch""}]","[{""name"": ""Headcannon""}, {""name"": ""Christian Whitehead""}]",Sonic
+Population: One,population-one,95.6,"[""Shooter"", ""Arcade""]","[{""name"": ""Oculus VR""}, {""name"": ""Meta Quest 2""}, {""name"": ""SteamVR""}, {""name"": ""Oculus Quest""}]","[{""name"": ""BigBox VR""}]",Population
+Action Fighter,action-fighter-2,95.5,"[""Shooter"", ""Racing"", ""Arcade""]",,,Action
+Action Fighter,action-fighter,95.5,"[{""name"": ""Shooter""}, {""name"": ""Racing""}, {""name"": ""Arcade""}]","[{""name"": ""Arcade""}, {""name"": ""Commodore C64/128/MAX""}, {""name"": ""ZX Spectrum""}, {""name"": ""Legacy Computer""}, {""name"": ""Atari ST/STE""}, {""name"": ""DOS""}, {""name"": ""Amiga""}, {""name"": ""Amstrad CPC""}, {""name"": ""Sega Master System/Mark III""}]","[{""name"": ""Sega Enterprises, Ltd.""}, {""name"": ""Sega Enterprises, Ltd.""}]",Action
+Final Fantasy XIV: Complete Edition,final-fantasy-xiv-complete-edition,95.4,"[""Role-playing (RPG)""]","[{""name"": ""PlayStation 4""}, {""name"": ""PC (Microsoft Windows)""}, {""name"": ""Mac""}]","[{""name"": ""Square Enix Business Division 5""}]",Final
+Grindstone,grindstone-2,95.3,"[""Puzzle"", ""Strategy"", ""Indie""]",,,Grindstone
+Dragon Quest VIII: Journey of the Cursed King,dragon-quest-viii-journey-of-the-cursed-king--1,95.3,"[{""name"": ""Role-playing (RPG)""}, {""name"": ""Strategy""}, {""name"": ""Adventure""}]","[{""name"": ""Nintendo 3DS""}]","[{""name"": ""Tose""}]",Dragon
+Dragon Quest VIII: Journey of the Cursed King,dragon-quest-viii-journey-of-the-cursed-king,95.3,"[""Role-playing (RPG)"", ""Strategy"", ""Adventure""]","[{""name"": ""PlayStation 2""}]","[{""name"": ""LEVEL-5""}, {""name"": ""Square Enix Product Development Division 9""}]",Dragon
+Grindstone,grindstone,95.3,"[""Puzzle"", ""Strategy"", ""Indie""]","[{""name"": ""Xbox Series X|S""}, {""name"": ""PlayStation 4""}, {""name"": ""PC (Microsoft Windows)""}, {""name"": ""iOS""}, {""name"": ""PlayStation 5""}, {""name"": ""Nintendo Switch""}]","[{""name"": ""Capybara Games""}]",Grindstone
+Metroid Prime: Trilogy,metroid-prime-trilogy,95.2,"[{""name"": ""Shooter""}, {""name"": ""Platform""}, {""name"": ""Puzzle""}, {""name"": ""Adventure""}]","[{""name"": ""Wii""}, {""name"": ""Wii U""}]","[{""name"": ""Retro Studios""}]",Metroid
+Metroid Prime: Trilogy,metroid-prime-trilogy-2,95.2,"[""Shooter"", ""Platform"", ""Puzzle"", ""Adventure""]",,,Metroid
+TROUBLESHOOTER: Abandoned Children,troubleshooter-abandoned-children,95.2,"[""Role-playing (RPG)"", ""Strategy"", ""Turn-based strategy (TBS)"", ""Indie""]","[""PC""]",,TROUBLESHOOTER
+Hunter Moonstrike,hunter-moonstrike,95.1,"[""Shooter"", ""Role-playing (RPG)"", ""Adventure"", ""Indie""]","[{""name"": ""PC (Microsoft Windows)""}]","[{""name"": ""10nstudio""}]",Hunter
+Rayman 2: The Great Escape,rayman-2-the-great-escape--3,95.1,"[""Platform"", ""Adventure""]","[{""name"": ""PlayStation 3""}, {""name"": ""PlayStation""}, {""name"": ""PlayStation Portable""}]","[{""name"": ""Ubisoft Shanghai""}]",Rayman
+Rayman 2: The Great Escape,rayman-2-the-great-escape,95.1,"[{""name"": ""Platform""}, {""name"": ""Adventure""}]","[{""name"": ""Nintendo 64""}]","[{""name"": ""Ubisoft Montpellier""}]",Rayman
+tModLoader,tmodloader,95.1,"[""Platform"", ""Role-playing (RPG)"", ""Simulator"", ""Strategy"", ""Adventure"", ""Indie""]","[{""name"": ""Linux""}, {""name"": ""PC (Microsoft Windows)""}, {""name"": ""Mac""}]","[{""name"": ""TML Team""}]",tModLoader
+Mega Man Legacy Collection 2,mega-man-legacy-collection-2,95.1,"[""Shooter"", ""Platform""]","[{""name"": ""PlayStation 4""}, {""name"": ""PC (Microsoft Windows)""}, {""name"": ""Xbox One""}, {""name"": ""Nintendo Switch""}]","[{""name"": ""Capcom Production Studio 1""}, {""name"": ""Bullets Co. Ltd.""}]",Mega
+Rayman 2: The Great Escape,rayman-2-the-great-escape--1,95.1,"[""Platform"", ""Adventure""]","[{""name"": ""PC (Microsoft Windows)""}]","[{""name"": ""Ubisoft Montpellier""}]",Rayman
+Mega Man Legacy Collection 2,mega-man-legacy-collection-2-2,95.1,"[""Shooter"", ""Platform""]",,,Mega
+Rayman 2: The Great Escape,rayman-2-the-great-escape-2,95.1,"[""Platform"", ""Adventure""]",,,Rayman
+Witch on the Holy Night,witch-on-the-holy-night,95.0,"[""Adventure"", ""Visual Novel""]",,,Witch
+Bad End Theater,bad-end-theater,95.0,"[{""name"": ""Puzzle""}, {""name"": ""Simulator""}, {""name"": ""Adventure""}, {""name"": ""Indie""}, {""name"": ""Visual Novel""}]","[{""name"": ""Xbox Series X|S""}, {""name"": ""PlayStation 4""}, {""name"": ""Linux""}, {""name"": ""Android""}, {""name"": ""PC (Microsoft Windows)""}, {""name"": ""PlayStation 5""}, {""name"": ""Mac""}, {""name"": ""Xbox One""}, {""name"": ""Nintendo Switch""}]","[{""name"": ""NomNomNami""}]",Bad
+Dokapon Journey,dokapon-journey,95.0,,,,Dokapon
+Death Stranding 2: On the Beach,death-stranding-2-on-the-beach-2,94.9,"[""Shooter"", ""Adventure""]",,,Death
+Monkey Island Special Edition Collection,monkey-island-special-edition-collection,94.9,"[""Point-and-click"", ""Adventure""]","[{""name"": ""PlayStation 3""}, {""name"": ""PC (Microsoft Windows)""}, {""name"": ""Xbox 360""}]","[{""name"": ""LucasArts""}]",Monkey
+Death Stranding 2: On The Beach,death-stranding-2-on-the-beach,94.9,"[{""name"": ""Shooter""}, {""name"": ""Adventure""}]","[{""name"": ""PlayStation 5""}]","[{""name"": ""Kojima Productions""}]",Death
+NFUT Cards,nfut-cards,94.8,"[""Simulator"", ""Sport"", ""Strategy"", ""Card & Board Game""]","[{""name"": ""Web browser""}]","[{""name"": ""Mosaiqo""}]",NFUT
+I Wanna Maker,i-wanna-maker,94.8,"[""Shooter"", ""Platform"", ""Indie"", ""Arcade""]","[""PC""]",,
+My Grandfather's Farm,my-grandfathers-farm,94.7,"[{""name"": ""Role-playing (RPG)""}, {""name"": ""Simulator""}, {""name"": ""Strategy""}, {""name"": ""Adventure""}, {""name"": ""Indie""}]","[{""name"": ""PC (Microsoft Windows)""}]","[{""name"": ""CHG""}]",My
+The Elder Scrolls IV: Oblivion - Game of the Year Edition Deluxe,the-elder-scrolls-iv-oblivion-game-of-the-year-edition-deluxe,94.7,"[{""name"": ""Role-playing (RPG)""}, {""name"": ""Adventure""}]","[{""name"": ""PC (Microsoft Windows)""}]","[{""name"": ""Bethesda Game Studios""}]",
+Metal Gear Solid 3: Snake Eater - HD Edition,metal-gear-solid-3-snake-eater-hd-edition,94.7,"[""Shooter"", ""Tactical"", ""Adventure""]","[{""name"": ""Xbox Series X|S""}, {""name"": ""PlayStation 3""}, {""name"": ""PlayStation 4""}, {""name"": ""Android""}, {""name"": ""PC (Microsoft Windows)""}, {""name"": ""PlayStation 5""}, {""name"": ""PlayStation Vita""}, {""name"": ""Xbox 360""}, {""name"": ""Nintendo Switch""}]","[{""name"": ""Konami Digital Entertainment""}]",Metal
+Assassin's Creed II: Deluxe Edition,assassins-creed-ii-deluxe-edition,94.6,"[""Adventure""]","[{""name"": ""PC (Microsoft Windows)""}, {""name"": ""iOS""}, {""name"": ""Mac""}]","[{""name"": ""Ubisoft Montreal""}]",Assassin's
+Ghost Trick: Phantom Detective,ghost-trick-phantom-detective--1,94.6,"[""Point-and-click"", ""Puzzle"", ""Adventure""]","[{""name"": ""PlayStation 4""}, {""name"": ""Android""}, {""name"": ""PC (Microsoft Windows)""}, {""name"": ""iOS""}, {""name"": ""Xbox One""}, {""name"": ""Nintendo Switch""}]","[{""name"": ""Capcom""}]",Ghost
+Ghost Trick: Phantom Detective,ghost-trick-phantom-detective,94.6,"[""Point-and-click"", ""Puzzle"", ""Adventure""]",,,Ghost
+Sengoku Rance,sengoku-rance,94.6,"[""Role-playing (RPG)"", ""Strategy"", ""Turn-based strategy (TBS)"", ""Adventure"", ""Visual Novel""]","[{""name"": ""PC (Microsoft Windows)""}, {""name"": ""OOParts""}]","[{""name"": ""Alicesoft""}]",Sengoku
+Leisure Suit Larry: Wet Dreams Dry Twice,leisure-suit-larry-wet-dreams-dry-twice,94.5,"[{""name"": ""Point-and-click""}, {""name"": ""Puzzle""}, {""name"": ""Adventure""}]","[{""name"": ""PlayStation 4""}, {""name"": ""PC (Microsoft Windows)""}, {""name"": ""Mac""}, {""name"": ""Xbox One""}, {""name"": ""Nintendo Switch""}]","[{""name"": ""CrazyBunch""}]",Leisure
+Project,project,94.5,"[""Fighting"", ""Platform""]",,,Project
+Project+,project-plus,94.5,"[{""name"": ""Fighting""}, {""name"": ""Platform""}]","[{""name"": ""Wii""}]","[{""name"": ""Project+ Development Team""}]",Project+
+Leisure Suit Larry: Wet Dreams Dry Twice,leisure-suit-larry-wet-dreams-dry-twice-2,94.5,"[""Point-and-click"", ""Puzzle"", ""Adventure""]",,,Leisure
+FiveM,fivem,94.4,"[""Shooter"", ""Racing"", ""Role-playing (RPG)""]",,,FiveM
+PlayM2M,playm2m,94.4,"[""Role-playing (RPG)"", ""Hack and slash/Beat 'em up"", ""Adventure""]","[{""name"": ""PC (Microsoft Windows)""}]","[{""name"": ""Laniatus LLC""}]",PlayM2M
+Cyberpunk 2077: Ultimate Edition,cyberpunk-2077-ultimate-edition,94.4,"[{""name"": ""Shooter""}, {""name"": ""Role-playing (RPG)""}, {""name"": ""Adventure""}]","[{""name"": ""Xbox Series X|S""}, {""name"": ""Nintendo Switch 2""}, {""name"": ""PC (Microsoft Windows)""}, {""name"": ""PlayStation 5""}, {""name"": ""Mac""}]","[{""name"": ""CD Projekt RED""}]",Cyberpunk
+Steambot Chronicles,steambot-chronicles-2,94.4,"[""Role-playing (RPG)"", ""Adventure""]",,,Steambot
+Steambot Chronicles,steambot-chronicles,94.4,"[""Role-playing (RPG)"", ""Adventure""]","[{""name"": ""PlayStation 2""}]","[{""name"": ""Irem""}]",Steambot
+Persona 5 Royal,persona-5-royal-2,94.3,"[""Role-playing (RPG)"", ""Adventure""]",,,Persona
+Persona 5 Royal,persona-5-royal,94.3,"[""Role-playing (RPG)"", ""Adventure""]","[{""name"": ""Xbox Series X|S""}, {""name"": ""PlayStation 4""}, {""name"": ""PC (Microsoft Windows)""}, {""name"": ""PlayStation 5""}, {""name"": ""Xbox One""}, {""name"": ""Nintendo Switch""}]","[{""name"": ""Atlus""}, {""name"": ""P Studio""}]",Persona
+Persona 4 Golden,persona-4-golden,94.3,"[""Role-playing (RPG)"", ""Adventure""]","[{""name"": ""PlayStation Vita""}]","[{""name"": ""Atlus""}]",Persona
+Persona 4 Golden,persona-4-golden--1,94.3,"[{""name"": ""Role-playing (RPG)""}, {""name"": ""Adventure""}, {""name"": ""Visual Novel""}]","[{""name"": ""Xbox Series X|S""}, {""name"": ""PlayStation 4""}, {""name"": ""PC (Microsoft Windows)""}, {""name"": ""Xbox One""}, {""name"": ""Nintendo Switch""}]","[{""name"": ""Atlus""}]",Persona
+Disco Elysium: The Final Cut,disco-elysium-the-final-cut,94.3,"[{""name"": ""Role-playing (RPG)""}, {""name"": ""Adventure""}, {""name"": ""Indie""}]","[{""name"": ""Google Stadia""}, {""name"": ""Xbox Series X|S""}, {""name"": ""PlayStation 4""}, {""name"": ""PC (Microsoft Windows)""}, {""name"": ""PlayStation 5""}, {""name"": ""Mac""}, {""name"": ""Xbox One""}, {""name"": ""Nintendo Switch""}]","[{""name"": ""ZA/UM""}]",Disco
+Arc the Lad II,arc-the-lad-ii,94.3,"[""Role-playing (RPG)"", ""Strategy"", ""Turn-based strategy (TBS)"", ""Tactical"", ""Adventure""]",,,Arc
+NextWorld2,nextworld2--1,94.2,"[{""name"": ""Role-playing (RPG)""}, {""name"": ""Hack and slash/Beat 'em up""}]","[{""name"": ""PC (Microsoft Windows)""}]","[{""name"": ""Donut Interactive""}]",NextWorld2
+Donkey Kong Bananza,donkey-kong-bananza-2,94.1,"[""Platform"", ""Adventure""]",,,Donkey
+Donkey Kong Bananza,donkey-kong-bananza,94.1,"[""Platform"", ""Adventure""]","[{""name"": ""Nintendo Switch 2""}, {""name"": ""Nintendo Switch""}]","[{""name"": ""Nintendo EPD""}, {""name"": ""Nintendo EPD Production Group No. 8""}]",Donkey
+Bloodborne: The Old Hunters,bloodborne-the-old-hunters--1,94.0,"[{""name"": ""Role-playing (RPG)""}, {""name"": ""Adventure""}]","[{""name"": ""PlayStation 4""}]","[{""name"": ""FromSoftware""}]",Bloodborne
+Derail Valley,derail-valley-2,94.0,"[""Racing"", ""Simulator"", ""Adventure"", ""Indie""]",,,Derail
+Bloodborne: The Old Hunters,bloodborne-the-old-hunters,94.0,"[""Role-playing (RPG)"", ""Adventure""]",,,Bloodborne
+Elden Ring,elden-ring,94.0,"[{""name"": ""Role-playing (RPG)""}, {""name"": ""Adventure""}]","[{""name"": ""Xbox Series X|S""}, {""name"": ""PlayStation 4""}, {""name"": ""Nintendo Switch 2""}, {""name"": ""PC (Microsoft Windows)""}, {""name"": ""PlayStation 5""}, {""name"": ""Xbox One""}]","[{""name"": ""FromSoftware""}]",Elden
+Derail Valley,derail-valley,94.0,"[""Racing"", ""Simulator"", ""Adventure"", ""Indie""]","[""PC""]",,Derail
+Elden Ring,elden-ring-2,94.0,"[""Role-playing (RPG)"", ""Adventure""]",,,Elden
+The Witcher 3: Wild Hunt,the-witcher-3-wild-hunt,93.9,"[{""name"": ""Role-playing (RPG)""}, {""name"": ""Adventure""}]","[{""name"": ""Xbox Series X|S""}, {""name"": ""PlayStation 4""}, {""name"": ""PC (Microsoft Windows)""}, {""name"": ""PlayStation 5""}, {""name"": ""Xbox One""}, {""name"": ""Nintendo Switch""}]","[{""name"": ""CD Projekt RED""}]",
+The Witcher 3: Wild Hunt,the-witcher-3-wild-hunt-2,93.9,"[""Role-playing (RPG)"", ""Adventure""]",,,
+Mega Man ZX Advent,mega-man-zx-advent-2,93.8,"[""Shooter"", ""Platform"", ""Adventure""]",,,Mega
+Mega Man ZX Advent,mega-man-zx-advent,93.8,"[{""name"": ""Shooter""}, {""name"": ""Platform""}, {""name"": ""Adventure""}]","[{""name"": ""Nintendo DS""}]","[{""name"": ""Inti Creates""}]",Mega
