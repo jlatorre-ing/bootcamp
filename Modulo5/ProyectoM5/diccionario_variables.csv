@@ -1,0 +1,17 @@
+variable,tipo,escala,descripcion,valores_posibles,unidad
+id,Cuantitativa discreta,Razón,Identificador único del estudiante,1 a 200,Entero
+edad,Cuantitativa discreta,Razón,Edad del estudiante al momento del estudio,18 a 26,Años
+genero,Cualitativa nominal,Nominal,Género con el que se identifica el estudiante,"Masculino, Femenino, No binario",Categórica
+carrera,Cualitativa nominal,Nominal,Área disciplinar de la carrera cursada,"Exactas, Sociales, Salud, Tecnología, Humanidades",Categórica
+horas_sueno,Cuantitativa continua,Razón,Promedio de horas dormidas por noche en la última semana,3.0 a 10.0,Horas
+calidad_sueno,Cualitativa ordinal,Ordinal,Percepción subjetiva de la calidad del sueño,"1=Muy mala, 2=Mala, 3=Regular, 4=Buena, 5=Muy buena",Escala 1-5
+comidas_dia,Cuantitativa discreta,Razón,Cantidad de comidas realizadas en un día típico,1 a 5,Entero
+consume_alcohol,Cualitativa nominal,Nominal,Si el estudiante consume alcohol habitualmente (≥1 vez por semana),"Sí, No",Categórica
+fuma,Cualitativa nominal,Nominal,Si el estudiante fuma tabaco regularmente,"Sí, No",Categórica
+dias_actividad,Cuantitativa discreta,Razón,Días por semana en que realiza actividad física de al menos 30 minutos,0 a 7,Días
+horas_actividad,Cuantitativa continua,Razón,Horas totales de actividad física a la semana (0 si no hace actividad),0.0 a 8.0,Horas
+peso_kg,Cuantitativa continua,Razón,Peso corporal del estudiante,45.0 a 110.0,Kilogramos
+talla_m,Cuantitativa continua,Razón,Altura del estudiante,1.50 a 1.95,Metros
+imc,Cuantitativa continua,Razón,Índice de Masa Corporal calculado como peso/talla²,12.0 a 45.0,kg/m²
+nivel_estres,Cualitativa ordinal,Ordinal,Nivel de estrés académico percibido en la última semana,"1=Muy bajo, 2=Bajo, 3=Moderado, 4=Alto, 5=Muy alto",Escala 1-5
+rendimiento,Cualitativa ordinal,Ordinal,Rendimiento académico autopercibido del estudiante,"Bajo, Medio, Alto",Categórica ordinal
