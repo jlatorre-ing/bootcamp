@@ -1,34 +1,33 @@
 import numpy as np
 
-# 1) Vector 0..99
-v = np.arange(100)
+# (Opcional) Para que te salga siempre lo mismo mientras practicas
+np.random.seed(42)
 
-# 2) Matriz 10x10 a partir del vector
-A = v.reshape(10, 10)
+# 1) Simular matriz 5x7 con temperaturas enteras entre 10°C y 40°C
+#    Ojo: np.random.randint(low, high) incluye low pero EXCLUYE high
+temps = np.random.randint(10, 41, size=(5, 7))
+print("Temperaturas (5 ciudades x 7 días):\n", temps)
 
-# 3) Transpuesta
-A_T = A.T
+# 2) Identificar temperaturas que superan los 30°C
+mask_mayor_30 = temps > 30
+temps_mayor_30 = temps[mask_mayor_30]
+print("\nTemperaturas > 30°C:\n", temps_mayor_30)
 
-# 4) Multiplicar cada valor por 2 (vectorizado)
-A_x2 = A * 2
+# 3) Reemplazar valores inferiores a 15°C por el valor 15
+#    (esto "limpia" los datos, poniendo un mínimo)
+temps_limpias = temps.copy()
+temps_limpias[temps_limpias < 15] = 15
+print("\nTemperaturas limpias (mínimo 15°C):\n", temps_limpias)
 
-# 5) Diagonal principal
-diag_A = np.diag(A)
+# 4) Medias por ciudad (fila) y por día (columna)
+media_por_ciudad = temps_limpias.mean(axis=1)  # 5 valores
+media_por_dia = temps_limpias.mean(axis=0)     # 7 valores
+print("\nMedia por ciudad (fila):\n", media_por_ciudad)
+print("\nMedia por día (columna):\n", media_por_dia)
 
-# 6) Matriz identidad del mismo tamaño
-I = np.eye(10)
-
-# 7) Multiplicación matricial con @ entre la original y la identidad
-A_I = A @ I
-
-# ---- Mostrar resultados (opcional) ----
-print("Vector v (0..99):\n", v)
-print("\nMatriz A (10x10):\n", A)
-print("\nTranspuesta A_T:\n", A_T)
-print("\nA * 2 (A_x2):\n", A_x2)
-print("\nDiagonal principal (diag_A):\n", diag_A)
-print("\nIdentidad I:\n", I)
-print("\nA @ I (A_I):\n", A_I)
-
-# (Opcional) Validación rápida:
-print("\n¿A @ I es igual a A?:", np.allclose(A_I, A))
+# 5) Ciudad con mayor temperatura promedio
+idx_ciudad_max = np.argmax(media_por_ciudad)  # índice 0..4
+print("\nCiudad con mayor promedio:",
+      idx_ciudad_max,
+      "con promedio:",
+      media_por_ciudad[idx_ciudad_max])

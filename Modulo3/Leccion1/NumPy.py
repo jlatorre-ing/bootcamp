@@ -289,3 +289,4 @@ valores = ["BAJA", "NORMAL", "ALTA"]
 
 categoria = np.select(condiciones, valores, default="SIN_CLASIF")
 print(categoria)
+

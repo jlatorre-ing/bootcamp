@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comparativa de Modelos de Clustering</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --surface: #12121a;
+    --border: #1e1e2e;
+    --accent1: #7c3aed;
+    --accent2: #06b6d4;
+    --accent3: #f59e0b;
+    --accent4: #10b981;
+    --text: #e2e8f0;
+    --muted: #64748b;
+    --highlight: #1e1b4b;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Mono', monospace;
+    min-height: 100vh;
+    padding: 40px 24px;
+    overflow-x: hidden;
+  }
+
+  /* Fondo con grid */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(124,58,237,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(124,58,237,0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 56px;
+    animation: fadeDown 0.7s ease both;
+  }
+
+  .label {
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--accent2);
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(28px, 5vw, 52px);
+    font-weight: 800;
+    line-height: 1.1;
+    background: linear-gradient(135deg, #fff 30%, var(--accent1) 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 16px;
+  }
+
+  .subtitle {
+    color: var(--muted);
+    font-size: 14px;
+    letter-spacing: 0.05em;
+  }
+
+  /* Tarjetas de modelos arriba */
+  .model-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 32px;
+    animation: fadeUp 0.6s ease 0.1s both;
+  }
+
+  .model-card {
+    border-radius: 12px;
+    padding: 16px 20px;
+    border: 1px solid;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .model-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: currentColor;
+    opacity: 0.8;
+  }
+
+  .model-card.m1 { border-color: rgba(124,58,237,0.4); background: rgba(124,58,237,0.06); color: var(--accent1); }
+  .model-card.m2 { border-color: rgba(6,182,212,0.4); background: rgba(6,182,212,0.06); color: var(--accent2); }
+  .model-card.m3 { border-color: rgba(245,158,11,0.4); background: rgba(245,158,11,0.06); color: var(--accent3); }
+  .model-card.m4 { border-color: rgba(16,185,129,0.4); background: rgba(16,185,129,0.06); color: var(--accent4); }
+
+  .model-card .num {
+    font-family: 'Syne', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    opacity: 0.6;
+    margin-bottom: 4px;
+  }
+
+  .model-card .name {
+    font-family: 'Syne', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.2;
+    margin-bottom: 4px;
+  }
+
+  .model-card .abbr {
+    font-size: 11px;
+    opacity: 0.6;
+  }
+
+  /* Tabla */
+  .table-wrapper {
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+    background: var(--surface);
+    animation: fadeUp 0.7s ease 0.2s both;
+    box-shadow: 0 0 80px rgba(124,58,237,0.08);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  thead tr {
+    background: #0d0d18;
+    border-bottom: 1px solid var(--border);
+  }
+
+  th {
+    padding: 18px 20px;
+    text-align: left;
+    font-family: 'Syne', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  th:first-child { color: var(--muted); width: 180px; }
+  th.h1 { color: var(--accent1); }
+  th.h2 { color: var(--accent2); }
+  th.h3 { color: var(--accent3); }
+  th.h4 { color: var(--accent4); }
+
+  tbody tr {
+    border-bottom: 1px solid var(--border);
+    transition: background 0.2s;
+  }
+
+  tbody tr:last-child { border-bottom: none; }
+  tbody tr:hover { background: rgba(255,255,255,0.02); }
+
+  td {
+    padding: 16px 20px;
+    font-size: 12.5px;
+    line-height: 1.6;
+    vertical-align: top;
+  }
+
+  td:first-child {
+    font-family: 'Syne', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    border-right: 1px solid var(--border);
+    white-space: nowrap;
+  }
+
+  /* Badges */
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    margin: 1px 2px 1px 0;
+    letter-spacing: 0.03em;
+  }
+
+  .badge-purple { background: rgba(124,58,237,0.15); color: #a78bfa; border: 1px solid rgba(124,58,237,0.25); }
+  .badge-cyan   { background: rgba(6,182,212,0.12); color: #67e8f9; border: 1px solid rgba(6,182,212,0.25); }
+  .badge-amber  { background: rgba(245,158,11,0.12); color: #fcd34d; border: 1px solid rgba(245,158,11,0.25); }
+  .badge-green  { background: rgba(16,185,129,0.12); color: #6ee7b7; border: 1px solid rgba(16,185,129,0.25); }
+  .badge-red    { background: rgba(239,68,68,0.12); color: #fca5a5; border: 1px solid rgba(239,68,68,0.25); }
+  .badge-gray   { background: rgba(100,116,139,0.15); color: #94a3b8; border: 1px solid rgba(100,116,139,0.2); }
+
+  /* Rating bars */
+  .rating {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .dots {
+    display: flex;
+    gap: 4px;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--border);
+  }
+
+  .dot.on-p { background: var(--accent1); box-shadow: 0 0 6px var(--accent1); }
+  .dot.on-c { background: var(--accent2); box-shadow: 0 0 6px var(--accent2); }
+  .dot.on-a { background: var(--accent3); box-shadow: 0 0 6px var(--accent3); }
+  .dot.on-g { background: var(--accent4); box-shadow: 0 0 6px var(--accent4); }
+
+  .rating-label {
+    font-size: 10px;
+    color: var(--muted);
+  }
+
+  /* Zebra */
+  tbody tr:nth-child(odd) { background: rgba(255,255,255,0.012); }
+  tbody tr:nth-child(odd):hover { background: rgba(255,255,255,0.025); }
+
+  /* Columnas coloreadas */
+  td:nth-child(2) { border-left: 2px solid rgba(124,58,237,0.15); }
+  td:nth-child(3) { border-left: 2px solid rgba(6,182,212,0.15); }
+  td:nth-child(4) { border-left: 2px solid rgba(245,158,11,0.15); }
+  td:nth-child(5) { border-left: 2px solid rgba(16,185,129,0.15); }
+
+  /* Leyenda */
+  .legend {
+    margin-top: 24px;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: fadeUp 0.7s ease 0.4s both;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  .legend-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+
+  /* Sección de uso práctico */
+  .use-cases {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    animation: fadeUp 0.7s ease 0.5s both;
+  }
+
+  .use-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+  }
+
+  .use-card .use-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .use-card ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .use-card li {
+    font-size: 11.5px;
+    color: var(--muted);
+    padding-left: 14px;
+    position: relative;
+    line-height: 1.5;
+  }
+
+  .use-card li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    font-size: 10px;
+  }
+
+  .use-card.uc1 .use-title { color: var(--accent1); }
+  .use-card.uc2 .use-title { color: var(--accent2); }
+  .use-card.uc3 .use-title { color: var(--accent3); }
+  .use-card.uc4 .use-title { color: var(--accent4); }
+
+  .use-card.uc1 li::before { color: var(--accent1); }
+  .use-card.uc2 li::before { color: var(--accent2); }
+  .use-card.uc3 li::before { color: var(--accent3); }
+  .use-card.uc4 li::before { color: var(--accent4); }
+
+  .section-label {
+    font-family: 'Syne', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 14px;
+    margin-top: 32px;
+    display: block;
+    animation: fadeUp 0.7s ease 0.45s both;
+  }
+
+  @keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 900px) {
+    .model-cards, .use-cases { grid-template-columns: repeat(2, 1fr); }
+    th, td { padding: 12px 14px; }
+    td:first-child { white-space: normal; }
+  }
+
+  @media (max-width: 600px) {
+    .model-cards, .use-cases { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <span class="label">Machine Learning · Aprendizaje No Supervisado</span>
+    <h1>Modelos de Clustering</h1>
+    <p class="subtitle">Tabla comparativa de los principales algoritmos de agrupamiento</p>
+  </header>
+
+  <!-- Tarjetas de modelo -->
+  <div class="model-cards">
+    <div class="model-card m1">
+      <div class="num">01</div>
+      <div class="name">K-Means</div>
+      <div class="abbr">Clustering por centroides</div>
+    </div>
+    <div class="model-card m2">
+      <div class="num">02</div>
+      <div class="name">Mezcla Gaussiana</div>
+      <div class="abbr">Gaussian Mixture Model</div>
+    </div>
+    <div class="model-card m3">
+      <div class="num">03</div>
+      <div class="name">Clustering Jerárquico</div>
+      <div class="abbr">Agglomerative / Divisive</div>
+    </div>
+    <div class="model-card m4">
+      <div class="num">04</div>
+      <div class="name">DBSCAN</div>
+      <div class="abbr">Density-Based Spatial Clustering</div>
+    </div>
+  </div>
+
+  <!-- Tabla principal -->
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Criterio</th>
+          <th class="h1">K-Means</th>
+          <th class="h2">GMM</th>
+          <th class="h3">Jerárquico</th>
+          <th class="h4">DBSCAN</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr>
+          <td>Tipo de modelo</td>
+          <td>Particionamiento por distancia mínima al centroide</td>
+          <td>Modelo probabilístico basado en distribuciones gaussianas</td>
+          <td>Árbol de agrupamientos (dendrograma)</td>
+          <td>Basado en densidad de puntos en el espacio</td>
+        </tr>
+
+        <tr>
+          <td>Parámetros principales</td>
+          <td><span class="badge badge-purple">k (nº clusters)</span></td>
+          <td><span class="badge badge-cyan">k (nº componentes)</span> <span class="badge badge-cyan">tipo de covarianza</span></td>
+          <td><span class="badge badge-amber">métrica de distancia</span> <span class="badge badge-amber">linkage</span></td>
+          <td><span class="badge badge-green">ε (epsilon)</span> <span class="badge badge-green">minPts</span></td>
+        </tr>
+
+        <tr>
+          <td>Nº de clusters</td>
+          <td>Definido manualmente antes</td>
+          <td>Definido manualmente antes</td>
+          <td>Elegido <em>a posteriori</em> por corte del dendrograma</td>
+          <td>Determinado automáticamente por el algoritmo</td>
+        </tr>
+
+        <tr>
+          <td>Asignación de puntos</td>
+          <td><span class="badge badge-gray">Hard (exclusiva)</span></td>
+          <td><span class="badge badge-cyan">Soft (probabilística)</span></td>
+          <td><span class="badge badge-gray">Hard (exclusiva)</span></td>
+          <td><span class="badge badge-gray">Hard</span> <span class="badge badge-red">+ ruido (outliers)</span></td>
+        </tr>
+
+        <tr>
+          <td>Forma de clusters</td>
+          <td>Esférica / convexa</td>
+          <td>Elíptica (flexible con covarianza)</td>
+          <td>Cualquier forma (según linkage)</td>
+          <td>Cualquier forma arbitraria</td>
+        </tr>
+
+        <tr>
+          <td>Detección de ruido / outliers</td>
+          <td><span class="badge badge-red">No detecta</span></td>
+          <td><span class="badge badge-red">No detecta</span></td>
+          <td><span class="badge badge-red">No detecta</span></td>
+          <td><span class="badge badge-green">Sí, de forma nativa</span></td>
+        </tr>
+
+        <tr>
+          <td>Escalabilidad</td>
+          <td>
+            <div class="rating">
+              <div class="dots">
+                <div class="dot on-p"></div><div class="dot on-p"></div><div class="dot on-p"></div><div class="dot on-p"></div><div class="dot"></div>
+              </div>
+              <span class="rating-label">Alta</span>
+            </div>
+          </td>
+          <td>
+            <div class="rating">
+              <div class="dots">
+                <div class="dot on-c"></div><div class="dot on-c"></div><div class="dot on-c"></div><div class="dot"></div><div class="dot"></div>
+              </div>
+              <span class="rating-label">Media</span>
+            </div>
+          </td>
+          <td>
+            <div class="rating">
+              <div class="dots">
+                <div class="dot on-a"></div><div class="dot on-a"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+              </div>
+              <span class="rating-label">Baja (O(n²)–O(n³))</span>
+            </div>
+          </td>
+          <td>
+            <div class="rating">
+              <div class="dots">
+                <div class="dot on-g"></div><div class="dot on-g"></div><div class="dot on-g"></div><div class="dot on-g"></div><div class="dot"></div>
+              </div>
+              <span class="rating-label">Media-Alta</span>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Complejidad computacional</td>
+          <td>O(n · k · i) iteraciones</td>
+          <td>O(n · k · d²) por iteración EM</td>
+          <td>O(n² log n) – O(n³)</td>
+          <td>O(n log n) con índice espacial</td>
+        </tr>
+
+        <tr>
+          <td>Sensibilidad a valores iniciales</td>
+          <td><span class="badge badge-red">Alta</span> — usa K-Means++</td>
+          <td><span class="badge badge-red">Alta</span> — depende de la inicialización EM</td>
+          <td><span class="badge badge-green">Ninguna</span> — determinístico</td>
+          <td><span class="badge badge-amber">Baja</span> — sensible a ε y minPts</td>
+        </tr>
+
+        <tr>
+          <td>Interpretabilidad</td>
+          <td>Muy alta — centroides claros</td>
+          <td>Alta — probabilidades por componente</td>
+          <td>Muy alta — dendrograma visual</td>
+          <td>Media — depende de ε y minPts</td>
+        </tr>
+
+        <tr>
+          <td>Supuestos del modelo</td>
+          <td>Clusters esféricos, igual varianza y tamaño</td>
+          <td>Datos generados por mezcla de gaussianas</td>
+          <td>Ninguno explícito (depende de la métrica)</td>
+          <td>Clusters con densidad uniforme interna</td>
+        </tr>
+
+        <tr>
+          <td>Manejo de alta dimensionalidad</td>
+          <td><span class="badge badge-amber">Moderado</span> — maldición dimensionalidad</td>
+          <td><span class="badge badge-amber">Moderado</span> — matrices covarianza colapsan</td>
+          <td><span class="badge badge-amber">Moderado</span></td>
+          <td><span class="badge badge-red">Difícil</span> — distancias pierden significado</td>
+        </tr>
+
+        <tr>
+          <td>Métrica de evaluación típica</td>
+          <td>Inercia / Silhouette / Elbow method</td>
+          <td>BIC / AIC / Log-verosimilitud</td>
+          <td>Coeficiente cophenético / Silhouette</td>
+          <td>Silhouette / DBCV</td>
+        </tr>
+
+        <tr>
+          <td>Implementaciones populares</td>
+          <td><span class="badge badge-gray">sklearn</span> <span class="badge badge-gray">faiss</span> <span class="badge badge-gray">spark.ml</span></td>
+          <td><span class="badge badge-gray">sklearn</span> <span class="badge badge-gray">pomegranate</span></td>
+          <td><span class="badge badge-gray">sklearn</span> <span class="badge badge-gray">scipy</span></td>
+          <td><span class="badge badge-gray">sklearn</span> <span class="badge badge-gray">hdbscan</span></td>
+        </tr>
+
+        <tr>
+          <td>Ventaja principal</td>
+          <td>Rápido, simple, muy escalable</td>
+          <td>Asignación probabilística, muy flexible</td>
+          <td>No requiere k previo, jerárquico visual</td>
+          <td>Detecta ruido, formas arbitrarias</td>
+        </tr>
+
+        <tr>
+          <td>Desventaja principal</td>
+          <td>Solo clusters convexos, k manual</td>
+          <td>Alto costo computacional, k manual</td>
+          <td>No escala a grandes datasets</td>
+          <td>Falla con densidades variables</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Casos de uso -->
+  <span class="section-label">Casos de uso recomendados</span>
+  <div class="use-cases">
+    <div class="use-card uc1">
+      <div class="use-title">K-Means</div>
+      <ul>
+        <li>Segmentación de clientes</li>
+        <li>Compresión de imágenes (cuantización de color)</li>
+        <li>Agrupación de documentos</li>
+        <li>Preprocesamiento para otros algoritmos</li>
+      </ul>
+    </div>
+    <div class="use-card uc2">
+      <div class="use-title">GMM</div>
+      <ul>
+        <li>Modelado de voz y audio</li>
+        <li>Segmentación de imágenes médicas</li>
+        <li>Detección de anomalías suaves</li>
+        <li>Generative modeling</li>
+      </ul>
+    </div>
+    <div class="use-card uc3">
+      <div class="use-title">Jerárquico</div>
+      <ul>
+        <li>Análisis bioinformático (genes)</li>
+        <li>Análisis social de redes</li>
+        <li>Exploración sin k definido</li>
+        <li>Datasets pequeños con estructura</li>
+      </ul>
+    </div>
+    <div class="use-card uc4">
+      <div class="use-title">DBSCAN</div>
+      <ul>
+        <li>Datos geoespaciales y GPS</li>
+        <li>Detección de fraude</li>
+        <li>Análisis de tráfico y movilidad</li>
+        <li>Clusters de forma irregular</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Leyenda -->
+  <div class="legend">
+    <div class="legend-item"><div class="legend-dot" style="background:var(--accent1)"></div> K-Means</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--accent2)"></div> Mezcla Gaussiana (GMM)</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--accent3)"></div> Clustering Jerárquico</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--accent4)"></div> DBSCAN</div>
+  </div>
+
+</div>
+</body>
+</html>
