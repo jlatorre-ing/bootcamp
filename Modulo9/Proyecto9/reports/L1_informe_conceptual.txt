@@ -1,0 +1,28 @@
+
+INFORME CONCEPTUAL — LECCIÓN 1: FUNDAMENTOS DE BIG DATA
+Proyecto: Retail Analytics Pipeline | RetailMax
+=======================================================
+
+1. CONTEXTO
+RetailMax gestiona millones de transacciones diarias. El dataset Fashion-MNIST
+(70.000 imágenes de 10 categorías de ropa) actúa como proxy del catálogo de
+productos, permitiendo demostrar un pipeline Big Data + ML completo.
+
+2. LAS 5V APLICADAS AL PROYECTO
+- Volumen    : 70.000 imágenes × 784 features = ~55 MB base, escalable a GB en producción
+- Velocidad  : Procesamiento por lotes (batch) con Spark; preparado para streaming
+- Variedad   : Imágenes, CSV, texto no estructurado
+- Veracidad  : Dataset limpio y balanceado (~6.000-7.000 muestras por clase)
+- Valor      : Clasificación automática → ahorro operativo + insights para marketing
+
+3. FUENTES DE DATOS
+- Primaria   : Fashion-MNIST (imágenes de prendas de Zalando Research)
+- Secundaria : Transacciones simuladas (user_id, product_id, amount)
+- Terciaria  : Reseñas y calificaciones (sentiment + rating)
+
+4. ARQUITECTURA PROPUESTA
+Ingesta CSV → Spark RDD → Transformaciones → DataFrame → Spark SQL
+→ Parquet → MLlib Pipeline (Logistic Regression + K-Means) → Insights Marketing
+
+5. TECNOLOGÍAS
+Apache Spark 3.x | PySpark | Spark SQL | Spark MLlib | Parquet | Matplotlib
